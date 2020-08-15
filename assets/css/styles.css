@@ -1,7 +1,33 @@
+/*------------------------------------HTMLPage----------------------------------*/
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+h1{
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 106px;
+  text-transform: none;
+  color: white;
+}
+
+h2{
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 80 px;
+  text-transform: none;
+  color: white;
 }
 
 nav {
@@ -12,8 +38,7 @@ nav {
   width: 100%;
   font-family: "Poppins", sans-serif;
   color: white;
-  background-image: linear-gradient(rgb(1, 0, 61), rgb(10, 5, 89));
-  position: fixed;
+  position: relative;
   z-index: 99;
 }
 
@@ -24,6 +49,45 @@ h4 {
 li:hover {
     text-decoration: underline;
   }
+
+/*------------------------------------Global------------------------------------*/
+
+.container{
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/*------------------------------------Section1----------------------------------*/
+
+#section-1{
+  height: 800px;
+}
+
+#portraitPhoto{
+  margin-top: 15vh;
+  width: 225px;
+  border-radius: 50%;
+}
+
+#contactLinks img{
+  width: 35px;
+  margin: 1rem;
+}
+
+#contactLinks:hover img{
+  cursor: pointer;
+}
+
+/*------------------------------------NavBar------------------------------------*/
+
+#NavBar{
+  /*background-image: url('../img/bg.jpg');*/
+  background-color: darkslategrey;
+}
 
 .logo {
   letter-spacing: 5px;
@@ -68,12 +132,13 @@ li:hover {
         justify-content: space-around;
         width: 60%;
     }
+}
 
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
-
+  
   .nav-links {
     position: absolute;
     right: 0px;
