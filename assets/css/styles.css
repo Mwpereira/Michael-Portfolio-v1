@@ -25,7 +25,7 @@ h2{
   font-style: normal;
   font-weight: 500;
   letter-spacing: 2px;
-  line-height: 80 px;
+  line-height: 90px;
   text-transform: none;
   color: white;
 }
@@ -71,6 +71,11 @@ li:hover {
   margin-top: 15vh;
   width: 225px;
   border-radius: 50%;
+}
+
+#contactLinks{
+  display: flex;
+  flex-direction: row;
 }
 
 #contactLinks img{
