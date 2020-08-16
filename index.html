@@ -2,61 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Michael Pereira</title>
+    <link rel="icon" href="assets/img/icon.png">
   </head>
+  <!----------------------SectionOne/Photo & NavBar---------------------->
   <body>
-    <div id="NavBar">
-    <div class="container" id="section-1">
-            <img id="portraitPhoto" src="./assets/img/mwp.jpg"/>
-            <h1>Michael Pereira</h1>
-            <h2>Web Developer x UI Designer</h2>
-            <div id="contactLinks">
-                <p>
-                    <a href="https://linkedin.com/in/michael-pereira-0237a0193/" target="_blank">
-                        <img src="./assets/img/linkedin.png"/>
-                    </a>
-                </p>
-                <p>
-                    <a href="https://github.com/Mwpereira" target="_blank">
-                        <img src="./assets/img/github.png"/>
-                    </a>
-                </p>
+    <div>
+        <nav>
+            <img src="assets/img/icon.png"/>
+            <ul class="nav-links">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Skills</a>
+              </li>
+              <li>
+                <a href="#">Portfolio</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
             </div>
-      </div>
-      <nav>
-        <ul class="nav-links">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Skills</a>
-          </li>
-          <li>
-            <a href="#">Portfolio</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-      
+        </nav>
     </div>
-    
-    <div id="Section2"></div>
+    <div id="sectionOne">
+        <div class="container" id="sectionOne">
+                <img id="portraitPhoto" src="./assets/img/mwp.jpg"/>
+                <h1>Michael Pereira</h1>
+                <h3>Web Developer x UI Designer</h3>
+                <div id="contactLinks">
+                    <p>
+                        <a href="https://linkedin.com/in/michael-pereira-0237a0193/" target="_blank">
+                            <img src="./assets/img/linkedin.png"/>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/Mwpereira" target="_blank">
+                            <img src="./assets/img/github.png"/>
+                        </a>
+                    </p>
+                </div>
+          </div>      
+        </div>
+    </div>
+    <!-------------------------SectionTwo/About Me------------------------->
+    <div id="sectionTwo">
+        <h2>About Me.</h2>
+        <div id="aboutMe">
+            <div id="aboutMe-specifics">
+                <span>
+                    <span class="material-icons">
+                        calendar_today
+                    </span>
+                <p>August 31, 2000</p> 
+                </span>
+                <span>
+                    <span class="material-icons">
+                        location_on
+                    </span>
+                    <p>Toronto, Canada</p>
+                </span>
+            </div>
+            <div id="aboutMe-writing">
+                <p>hello friend.</p>
+            </div>
+        </div>  
+    </div>
+    <!-------------------------SectionThree/Skills------------------------->
+    <div id="sectionThree">
+        <h2>Skills.</h2>
+    </div>
+    <!------------------------SectionFour/Portfolio------------------------>
+    <div id="sectionFour">
+        <h2>Portfolio.</h2>
+    </div>
+    <!-------------------------SectionThree/Contact------------------------>
+    <div id="sectionFive">
+        <h2>Contact.</h2>
+    </div>
+
   </body>
 
   <script src="index.js"></script>
