@@ -223,6 +223,7 @@ li:hover {
 #aboutMe span{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   text-align: center;
   margin: 10px;
