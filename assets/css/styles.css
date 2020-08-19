@@ -1,230 +1,324 @@
 /*------------------------------------HTMLPage----------------------------------*/
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Montserrat";
 }
 
-html{
-  scroll-behavior: smooth;
-  font-size:100%;
+html {
+	scroll-behavior: smooth;
 }
 
-h1{
-  font-family: "Montserrat";
-  font-size: 40px;
-  font-style: normal;
+div {
+	display: block;
+}
+
+h1 {
+	font-size: 56px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	color: white;
+}
+
+h2 {
+  font-size: 48px;
   font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 100px;
-  text-transform: none;
-  color: white;
+	letter-spacing: 3px;
+	color: rgb(80, 81, 82);
 }
 
-h2{
-  font-family: "Montserrat";
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 1000;
-  letter-spacing: 2px;
-  text-transform: none;
-  color: rgb(116, 125, 134);
-  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.1)));
+h3 {
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: white;
 }
 
-h3{
-  font-family: "Montserrat";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 2px;
-  line-height: 90px;
-  text-transform: none;
-  color: white;
+p {
+	font-size: 18px;
+	font-style: normal;
+	letter-spacing: 2px;
+	text-transform: none;
+	color: black;
 }
+
+/*--------------------------------------NavBar-------------------------------------*/
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  width: 100%;
-  font-family: "Montserrat";
-  color: white;
-  position: fixed;
-  z-index: 99;
-  background-color: darkslategrey;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	width: 100%;
+	color: white;
+	position: fixed;
+	z-index: 99;
 }
 
-h4 {
-    font-family: "Montserrat";
+.logo img{
+  width: 60px;
+  height: 60px;
 }
-
-p{
-  font-family: "Montserrat";
-  font-size: 18px;
-  font-style: normal;
-  letter-spacing: 2px;
-  text-transform: none;
-  color: black;
-}
-
-li:hover {
-    text-decoration: underline;
-  }
-
-/*------------------------------------Global------------------------------------*/
-
-.container{
-    display: flex;
-    flex-direction: column;  
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-}
-
-/*------------------------------------NavBar------------------------------------*/
 
 .nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 600px;
+	display: flex;
+	justify-content: space-around;
+	width: 600px;
 }
 
 .nav-links li {
   list-style: none;
 }
 
+li:hover {
+  text-decoration: underline;
+}
+
 .nav-links a {
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14.5px;
-  color: white;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
 }
 
 /* Burger */
 .burger {
-  display: none;
-  cursor: pointer;
+	display: none;
+	cursor: pointer;
 }
 
 .burger div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px;
-  transition: all 0.3s ease;
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 5px;
+	transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1024px) {
-    .nav-links {
-        display: flex;
-        justify-content: space-around;
-        width: 60%;
-    }
+  .nav-links {
+      display: flex;
+      justify-content: space-around;
+      width: 60%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: rgb(0, 1, 65);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    justify-content: space-around;
-  }
+	body {
+		overflow-x: hidden;
+	}
 
-  .nav-links li {
-    opacity: 0;
-  }
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 40vh;
+		top: 8vh;
+		background-image: url("../img/bg-mobile.png");
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		justify-content: space-around;
+	}
 
-  .burger {
-    display: block;
-  }
+	.nav-links li {
+		opacity: 0%;
+	}
+
+	.burger {
+		display: block;
+	}
 }
+
 .nav-active {
-  transform: translateX(0%);
+	transform: translateX(0%);
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+	transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
-  opacity: 0;
+	opacity: 0;
 }
 
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+	transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
 
 /*------------------------------------SectionOne----------------------------------*/
 
-#sectionOne{
-  height: 100vh;
-  background-color: darkslategrey;
+#Home {
+	height: 100vh;
+	background-image: url("../img/bg.jpg");
+	background-color: #cccccc;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+ 	align-items: center;
+  	padding-bottom: 300px;
 }
 
-#portraitPhoto{
-  width: 225px;
-  border-radius: 50%;
+#Home h3{
+  margin-bottom: 25px;
 }
 
-#contactLinks{
+#Home span {
+	display: flex;
+	flex-direction: row;
+}
+
+#Home img {
+	width: 35px;
+	margin: 1rem;
+}
+
+#Home img:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+	transition: transform 0.25s ease-in;
+}
+
+/*-----------------------------------SectionTwo-----------------------------------*/
+
+#About {
+	margin: 125px 50px 145px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#About-Content{
   display: flex;
   flex-direction: row;
-}
-
-#contactLinks img{
-  width: 35px;
-  margin: 1rem;
-}
-
-#contactLinks img:hover{
-  cursor: pointer;
-  transform: scale(1.2);
-  transition: transform 0.25s ease-in;
-}
-
-/*------------------------------------SectionTwo----------------------------------*/
-
-#sectionTwo{
-}
-
-#aboutMe{
-  display: flex;
-  flex-direction: row;
-}
-
-#aboutMe span{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin: 10px;
+  height: 30vh;
+  width: 80%;
+}
+
+#About-Specifics span{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  	align-items: center;
+	text-align: center;
+	padding: 10px;
+}
+
+#About-Desc{
+	width: 600px;
+}
+
+#portraitPhoto {
+	margin-top: 80px;
+	margin-bottom: 45px;
+	width: 250px;
+	border-radius: 50%;
+}
+
+/*-----------------------------------SectionThree---------------------------------*/
+
+#Skills {
+	margin: 145px 50px 145px 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.skills{
+	margin-top: 100px;
+	background-color: rgb(204, 204, 204);
+	border-radius: 12px;
+	width: 500px;
+	height: 350px;
+}
+
+#Skills h3{
+	font-size: 20px;
+	padding: 20px;
+}
+
+#Skills-Content{
+	width: 60%;
+}
+
+#Skills-Content span{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#Skills-photo{
+	margin-top: 80px;
+}
+
+#Skills img {
+	width: 50%;
+	height: auto;
+	border-radius: 12px;
+}
+
+/*-----------------------------------SectionFour----------------------------------*/
+
+#portfolio {
+	margin-top: 10px;
+	background-color: darkslategrey;
+	height: 850px;
+}
+
+/*-----------------------------------SectionFive----------------------------------*/
+
+#contact {
+	margin-top: 10px;
+	background-color: darkslategrey;
+	height: 850px;
+}
+
+@media only screen and (max-width: 800px) {
+  #Home {
+    height: 100vh;
+    background-image: url("../img/bg-mobile.png");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h1{
+    font-size: 38px;
+  }
+
+  h2{
+	font-size: 36px;
+  }
+
+  #About-Contents{
+	  flex-direction: column;
+  }
 }

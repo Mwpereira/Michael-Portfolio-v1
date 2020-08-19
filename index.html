@@ -1,106 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <title>Michael Pereira</title>
-    <link rel="icon" href="assets/icons/icon.png">
-  </head>
-  <!----------------------SectionOne/Photo & NavBar---------------------->
-  <body>
-    <div>
-        <nav>
-            <img src="assets/icons/icon.png" style="width: 60px;"/>
-            <ul class="nav-links">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Skills</a>
-              </li>
-              <li>
-                <a href="#">Portfolio</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-            <div class="burger">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-            </div>
-        </nav>
-    </div>
-    <div id="sectionOne">
-        <div class="container" id="sectionOne">
-                <img id="portraitPhoto" src="./assets/img/mwp.jpg"/>
-                <h1>Michael Pereira</h1>
-                <h3>Web Developer x UI Designer</h3>
-                <div id="contactLinks">
-                    <p>
-                        <a href="https://linkedin.com/in/michael-pereira-0237a0193/" target="_blank">
-                            <img src="./assets/icons/linkedin.png"/>
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://github.com/Mwpereira" target="_blank">
-                            <img src="./assets/icons/github.png"/>
-                        </a>
-                    </p>
-                </div>
-          </div>      
-        </div>
-    </div>
-    <!-------------------------SectionTwo/About Me------------------------->
-    <div class="container" id="sectionTwo">
-        <h2>About Me.</h2>
-        <div id="aboutMe">
-            <div id="aboutMe-specifics">
-                <span>
-                    <span class="material-icons">
-                        calendar_today
-                    </span>
-                <p>August 31, 2000</p> 
-                </span>
-                <span>
-                    <span class="material-icons">
-                        location_on
-                    </span>
-                    <p>Toronto, Canada</p>
-                </span>
-            </div>
-            <div id="aboutMe-writing">
-                <p>hello friend.</p>
-            </div>
-        </div>  
-    </div>
-    <!-------------------------SectionThree/Skills------------------------->
-    <div id="sectionThree">
-        <h2>Skills.</h2>
-    </div>
-    <!------------------------SectionFour/Portfolio------------------------>
-    <div id="sectionFour">
-        <h2>Portfolio.</h2>
-    </div>
-    <!-------------------------SectionThree/Contact------------------------>
-    <div id="sectionFive">
-        <h2>Contact.</h2>
-    </div>
 
-  </body>
+<head>
+	<!---Required meta tags--->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="HandheldFriendly" content="true" />
+	<!---CSS--->
+	<link rel="stylesheet" href="./assets/css/styles.css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<!---jQuery--->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!---Website Properties--->
+	<title>Michael Pereira</title>
+	<link rel="icon" href="assets/icons/logo.png" />
+</head>
 
-  <script src="index.js"></script>
+<body>
+	<!------------------------------NavBar--------------------------------->
+	<nav class="smart-scroll">
+		<div class="logo">
+			<img src="./assets/icons/logo.png" />
+		</div>
+		<ul class="nav-links">
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a href="#">Skills</a>
+			</li>
+			<li>
+				<a href="#">Portfolio</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+		</ul>
+
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+	<!-------------------------SectionOne/Photo---------------------------->
+	<div id="Home">
+		<h1>Michael Pereira</h1>
+		<h3>Web Developer x UI Designer</h3>
+		<span>
+			<p>
+				<a href="https://linkedin.com/in/michael-pereira-0237a0193/" target="_blank">
+					<img src="./assets/icons/linkedin.png" />
+				</a>
+			</p>
+			<p>
+				<a href="https://github.com/Mwpereira" target="_blank">
+					<img src="./assets/icons/github.png" />
+				</a>
+			</p>
+		</span>
+	</div>
+	<!--------------------------SectionTwo/About Me------------------------->
+	<div id="About">
+		<h2>About Me.</h2>
+		<img id="portraitPhoto" src="./assets/img/mwp.jpg" class="img-fluid" />
+		<div id="About-Content">
+			<div id="About-Specifics">
+				<span>
+					<span class="material-icons">
+						calendar_today
+					</span>
+					<p>August 31, 2000</p>
+				</span>
+				<span>
+					<span class="material-icons">
+						place
+					</span>
+					<p>Toronto, Canada</p>
+				</span>
+				<span>
+					<span class="material-icons">
+						work_outline
+					</span>
+					<p>Test Web Developer @ CaseWare International</p>
+				</span>
+
+			</div>
+			<div id="About-Desc">
+				<p>
+					Hello, my name is Michael Pereira. I am an aspiring full-stack developer with years of experience
+					web developing and creating desktop GUI's. I first began programming at 12,
+					learning languages including Java and Visual Basic. I quickly realized that coding was becoming a passion,
+					thus continuing forward and mastering C# and Javascript.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-------------------------SectionThree/Skills------------------------->
+	<div id="Skills">
+		<h2>Skills.</h2>
+		<img id="Skills-photo" src="./assets/img/skills.jpg"/>
+		<div id="Skills-Content">
+			<span>
+				<div class="skills" id="Skills-Languages"><h3>Front-end</h3></div>
+				<div class="skills" id="Skills-Frameworks"><h3>Frameworks</h3></div>
+			</span>
+			<span>
+				<div class="skills" id="Skills-Server"><h3>Server</h3></div>
+				<div class="skills" id="Skills-Database"><h3>Database</h3></div>
+			</span>
+		</div>	
+		<div class="skills" id="Skills-DevTools"><h3>Developer Tools</h3></div>
+		<img src="./assets/img/hardware.jpg"/>
+	</div>
+	<!------------------------SectionFour/Portfolio------------------------>
+	<div class="container" id="portfolio">
+		<h2>Portfolio.</h2>
+	</div>
+	<!-------------------------SectionThree/Contact------------------------>
+	<div class="container" id="contact">
+		<h2>Contact.</h2>
+	</div>
+</body>
+
+<script src="index.js"></script>
+
 </html>
