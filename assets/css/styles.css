@@ -271,6 +271,7 @@ li:hover {
 
 #Skills h3{
 	font-size: 20px;
+	font-weight: 600;
 	padding: 20px;
 }
 
@@ -294,6 +295,17 @@ li:hover {
 	height: auto;
 	border-radius: 12px;
 }
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+  }
+  
+  .grid-item {
+	font-size: 30px;
+	text-align: center;
+  }
 
 /*-----------------------------------SectionFour----------------------------------*/
 
