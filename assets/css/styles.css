@@ -45,6 +45,10 @@ p {
 	color: black;
 }
 
+.container{
+	box-shadow: 3px 3px 5px 6px #ccc; 
+}
+
 /*--------------------------------------NavBar-------------------------------------*/
 
 nav {
@@ -203,6 +207,7 @@ li:hover {
 
 #About {
 	margin: 125px 50px 145px 50px;
+	padding-top: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -229,7 +234,11 @@ li:hover {
 }
 
 #About-Desc{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 600px;
+	padding: 10px;
 }
 
 #portraitPhoto {
@@ -243,6 +252,8 @@ li:hover {
 
 #Skills {
 	margin: 145px 50px 145px 50px;
+	padding-top: 50px;
+	padding-bottom: 75px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -286,19 +297,31 @@ li:hover {
 
 /*-----------------------------------SectionFour----------------------------------*/
 
-#portfolio {
-	margin-top: 10px;
-	background-color: darkslategrey;
-	height: 850px;
+#Portfolio {
+	margin: 145px 50px 145px 50px;
+	padding-top: 50px;
+	padding-bottom: 75px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 /*-----------------------------------SectionFive----------------------------------*/
 
 #contact {
-	margin-top: 10px;
-	background-color: darkslategrey;
-	height: 850px;
+	margin: 145px 50px 145px 50px;
+	padding-top: 50px;
+	padding-bottom: 75px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
+
+/*-----------------------------------MediaQueries----------------------------------*/
 
 @media only screen and (max-width: 800px) {
   #Home {
