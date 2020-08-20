@@ -274,7 +274,7 @@ li:hover {
 }
 
 #Skills-Content {
-	width: 60%;
+	width: 70%;
 }
 
 #Skills-Content span {
@@ -430,7 +430,10 @@ li:hover {
 
 /*-----------------------------------MediaQueries----------------------------------*/
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
+
+	/*------------------------------------SectionOne----------------------------------*/
+
 	#Home {
 		height: 100vh;
 		background-image: url("../img/bg-mobile.png");
@@ -441,14 +444,37 @@ li:hover {
 	}
 
 	h1 {
-		font-size: 38px;
+		font-size: 2.375rem;
 	}
 
 	h2 {
-		font-size: 36px;
+		font-size: 2.25rem;
 	}
 
-	#About-Contents {
-		flex-direction: column;
+	p{
+		font-size: 1.125rem;
 	}
+
+	/*------------------------------------SectionTwo----------------------------------*/
+
+	#About{
+		margin: 15% 5% 15% 5%;
+		height: 100%;
+	}
+
+	#About-Content {
+		flex-direction: column;
+		height: 100%;
+	}
+
+	#About-Desc{
+		height: 100%;
+		width: 100%;
+		padding: 7.5% 7.5% 20% 7.5%;
+	}
+
+	/*------------------------------------SectionThree----------------------------------*/
+
+	
+
 }
