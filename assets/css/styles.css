@@ -345,6 +345,50 @@ li:hover {
 	text-align: center;
 }
 
+#Portfolio h3{
+	font-size: 30px;
+	font-weight: 600;
+	padding: 20px;
+	color: rgb(80, 81, 82);
+}
+
+#Portfolio p{
+	font-size: 16px;
+}
+
+.grid-container-p3{
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-evenly;
+	align-content: space-evenly;
+	height: 100%;
+	width: 100%;
+	padding-top: 100px;
+}
+
+.grid-item-p {
+	font-size: 30px;
+	text-align: center;
+	width: 350px;
+	height: 450px;
+	box-shadow: 3px 3px 5px 6px #ccc; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 35px;
+  }
+
+  .grid-item-p img{
+	  width: 100px;
+	  border-radius: 12px;
+	  margin: 30px;
+  }
+  
+  #github-dl{
+	  width: 40px;
+  }
+
 /*-----------------------------------SectionFive----------------------------------*/
 
 #Contact {
