@@ -347,7 +347,7 @@ li:hover {
 
 /*-----------------------------------SectionFive----------------------------------*/
 
-#contact {
+#Contact {
 	margin: 145px 50px 145px 50px;
 	padding-top: 50px;
 	padding-bottom: 75px;
@@ -356,6 +356,10 @@ li:hover {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+#Contact h3{
+	color: black;
 }
 
 /*-----------------------------------MediaQueries----------------------------------*/
