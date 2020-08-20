@@ -404,6 +404,28 @@ li:hover {
 
 #Contact h3{
 	color: black;
+	font-size: 22px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#Contact-photo{
+	margin-top: 80px;
+	width: 50%;
+	height: auto;
+	border-radius: 12px;
+}
+
+.Contact-links{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	width: 15%;
+}
+
+.Contact-links img{
+	width: 50px;
 }
 
 /*-----------------------------------MediaQueries----------------------------------*/
