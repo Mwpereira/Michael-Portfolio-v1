@@ -168,7 +168,7 @@ li:hover {
 #Home {
 	height: 100vh;
 	background-image: url("../img/bg.jpg");
-	background-color: #cccccc;
+	background-color: rgb(52, 1, 67);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -434,7 +434,7 @@ li:hover {
 	#Home {
 		height: 100vh;
 		background-image: url("../img/bg-mobile.png");
-		background-color: #cccccc;
+		background-color: rgb(52, 1, 67);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
