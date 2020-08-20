@@ -415,12 +415,17 @@ li:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
 	width: 15%;
 }
 
-.Contact-links img {
+.Contact-links img{
 	width: 50px;
+}
+
+.Contact-links img:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+	transition: transform 0.25s ease-in;
 }
 
 /*-----------------------------------MediaQueries----------------------------------*/
