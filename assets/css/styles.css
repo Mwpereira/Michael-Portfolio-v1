@@ -25,8 +25,8 @@ h1 {
 h2 {
   font-size: 48px;
   font-weight: 700;
-	letter-spacing: 3px;
-	color: rgb(80, 81, 82);
+  letter-spacing: 3px;
+  color: rgb(80, 81, 82);
 }
 
 h3 {
@@ -263,16 +263,15 @@ li:hover {
 
 .skills{
 	margin-top: 100px;
-	background-color: rgb(204, 204, 204);
-	border-radius: 12px;
 	width: 500px;
 	height: 350px;
 }
 
 #Skills h3{
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 600;
 	padding: 20px;
+	color: rgb(80, 81, 82);
 }
 
 #Skills-Content{
@@ -288,24 +287,34 @@ li:hover {
 
 #Skills-photo{
 	margin-top: 80px;
-}
-
-#Skills img {
 	width: 50%;
 	height: auto;
 	border-radius: 12px;
 }
 
-.grid-container {
+.grid-container-3 {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	padding: 10px;
+	justify-content: space-evenly;
+	align-content: space-evenly;
+	height: 80%;
+  }
+
+  .grid-container-2 {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-evenly;
+	align-content: space-evenly;
+	height: 80%;
   }
   
   .grid-item {
 	font-size: 30px;
 	text-align: center;
+	width: 100px;
+	height: auto;
   }
+
 
 /*-----------------------------------SectionFour----------------------------------*/
 
