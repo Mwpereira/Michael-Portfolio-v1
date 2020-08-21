@@ -403,7 +403,7 @@ li:hover {
     margin-bottom: 100px;
 }
 
-#Contact-photo {
+#Contact-Photo {
     margin-top: 80px;
     width: 50%;
     height: auto;
@@ -502,7 +502,6 @@ li:hover {
         height: 100%;
 	}
 	
-
     #Skills-Photo {
         width: 80%;
     }
@@ -527,21 +526,13 @@ li:hover {
     }
 
     .grid-container-3 {
-        display: grid;
-        grid-template-columns: auto auto auto;
         justify-items: center;
         align-items: space-evenly;
-        height: 80%;
-        width: 100%;
     }
 
     .grid-container-2 {
-        display: grid;
-        grid-template-columns: auto auto;
         justify-items: center;
         align-content: space-evenly;
-        height: 80%;
-        width: 100%;
     }
 
     .grid-item {
@@ -559,7 +550,8 @@ li:hover {
 	#Portfolio {
         margin: 15% 5% 15% 5%;
         height: 100%;
-    }
+	}
+	
 	.grid-item-p{
 		width: 80%;
 	}
@@ -572,8 +564,16 @@ li:hover {
 	#Contact {
         margin: 15% 5% 15% 5%;
         height: 100%;
-		
-    }
+	}
+	
+	#Contact-Photo{
+		width: 80%;
+	}
+
+	#Contact h3{
+		padding: 25px;
+	}
+
 	.Contact-Links{
 		width: 75%;
 	}
