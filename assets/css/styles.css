@@ -264,7 +264,6 @@ li:hover {
     flex-direction: column;
 	justify-content: center;
 	align-items: space-evenly;
-	background: red;
 }
 
 #Skills h3 {
@@ -296,7 +295,8 @@ li:hover {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
-    align-content: space-evenly;
+	align-content: space-evenly;
+	grid-gap: 20px;
     height: 80%;
 }
 
@@ -304,7 +304,8 @@ li:hover {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-evenly;
-    align-content: space-evenly;
+	align-content: space-evenly;
+	grid-gap: 20px;
     height: 80%;
 }
 
@@ -528,8 +529,10 @@ li:hover {
     }
 
     .grid-container-3 {
+		grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+		grid-gap: 0px;
         justify-items: center;
-        align-items: space-evenly;
+		align-items: space-evenly;
     }
 
     .grid-container-2 {
@@ -556,7 +559,6 @@ li:hover {
 
 	.grid-container-p3{
 		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-		grid-gap: 50px;
 		justify-items: center;
 		align-content: space-between;
 	}
