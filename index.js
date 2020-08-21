@@ -76,12 +76,8 @@ $("#Contact-Nav").click(function () {
 });
 
 $(".nav-links a").click(function () {
-	alert('HOME');
-	$(".nav-active").transform = `translateX(100%)`;
-});
-
-$(".burger").click(function () {
-	alert('CLOSE');
+	const nav = document.querySelector(".nav-links");
+	nav.classList.toggle("nav-active");
 });
 
 var prevScrollpos = window.pageYOffset;
