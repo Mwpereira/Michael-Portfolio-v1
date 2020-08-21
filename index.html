@@ -11,7 +11,17 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <!---jQuery--->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!--Google Analytics-->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161210047-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-161210047-1');
+		</script>
         <!---Website Properties--->
         <title>Michael Pereira</title>
         <link rel="icon" href="assets/icons/logo.png" />
@@ -48,7 +58,7 @@
             </div>
         </nav>
         <!-------------------------SectionOne/Photo---------------------------->
-        <div class="container" id="Home">
+        <div id="Home">
             <h1>Michael Pereira</h1>
             <h3>Web Developer x UI Designer</h3>
             <span>
@@ -128,28 +138,27 @@
                 </span>
                 <span>
                     <div class="skills">
-                        <h3>Server</h3>
+                        <h3>Servers</h3>
                         <div class="grid-container-2">
                             <img src="assets/img/node.png" class="grid-item" />
                             <img src="assets/img/express.png" class="grid-item" />
                         </div>
                     </div>
                     <div class="skills">
-                        <h3>Database</h3>
+                        <h3>Databases</h3>
                         <div class="grid-container-2">
                             <img src="assets/img/postgresql.png" class="grid-item" />
                             <img src="assets/img/mongodb.png" class="grid-item" />
                         </div>
                     </div>
-                </span>
-            </div>
-            <div class="skills">
-                <h3>Developer Tools</h3>
-                <div class="dev-tools">
+				</span>
+				<h3>Developer Tools</h3>
+                <div id="dev-tools" class="skills">
                     <img src="assets/img/github.png" />
                     <img src="assets/img/vsstudio.png" />
                     <img src="assets/img/vscode.png" />
-                    <img src="assets/img/netbeans.png" />
+					<img src="assets/img/netbeans.png" />
+					<img src="assets/img/npm.png" />
                     <img src="assets/img/figma.png" />
                 </div>
             </div>
@@ -192,8 +201,8 @@
         <div class="container" id="Contact">
             <h2>Contact Me.</h2>
             <img id="Contact-photo" src="./assets/img/hardware.jpg" />
-            <h3>Feel free to contact me at anytime!</h3>
-            <div class="Contact-links">
+            <h3 style="padding: 25px;">Feel free to contact me at anytime!</h3>
+            <div class="Contact-Links">
                 <p>
                     <a href="mailto:michael.w.pereira@ryerson.ca" target="_blank">
                         <img src="./assets/icons/message.png" />
