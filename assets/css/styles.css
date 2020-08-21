@@ -546,6 +546,17 @@ li:hover {
         width: 100px;
         height: auto;
     }
+
+    /*------------------------------------SectionFive----------------------------------*/
+
+    .Contact-Links{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+        align-items: space-evenly;
+        grid-gap: 25px;
+    }
+
 }
 
 @media only screen and (max-width: 930px) {
