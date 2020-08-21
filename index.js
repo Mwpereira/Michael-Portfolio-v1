@@ -19,12 +19,14 @@ const navSlide = () => {
 
 navSlide();
 
+var pxH = window.innerHeight;
+
 $("#Home-Nav").addClass("active");
 
 $("#Home-Nav").click(function () {
 	$("html, body").animate(
 		{
-			scrollTop: $("#Home").offset().top - 66,
+			scrollTop: $("#Home").offset().top - pxH*0.01,
 		},
 		1000
 	);
@@ -34,7 +36,7 @@ $("#Home-Nav").click(function () {
 $("#About-Nav").click(function () {
 	$("html, body").animate(
 		{
-			scrollTop: $("#About").offset().top - 112,
+			scrollTop: $("#About").offset().top - pxH*.1,
 		},
 		1000
 	);
@@ -55,7 +57,7 @@ $("#Portfolio-Nav").click(function () {
 	$(this).addClass("active");
 	$("html,body ").animate(
 		{
-			scrollTop: $("#Portfolio").offset().top - 112,
+			scrollTop: $("#Portfolio").offset().top - pxH*.06,
 		},
 		1000
 	);
@@ -73,13 +75,23 @@ $("#Contact-Nav").click(function () {
 	return false;
 });
 
+$(".nav-links a").click(function () {
+	alert('HOME');
+	$(".nav-active").transform = `translateX(100%)`;
+});
+
+$(".burger").click(function () {
+	alert('CLOSE');
+});
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
+var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.transform = `translateY(0%)`;
+	document.getElementById("navbar").style.transform = `translateY(0%)`;	
   } else {
     document.getElementById("navbar").style.transform = `translateY(-100%)`;
   }
   prevScrollpos = currentScrollPos;
 }
+
