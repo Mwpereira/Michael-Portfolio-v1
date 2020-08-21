@@ -248,7 +248,7 @@ li:hover {
 #Skills {
     margin: 145px 50px 145px 50px;
     padding-top: 50px;
-    padding-bottom: 25px;
+    padding-bottom: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,6 +308,7 @@ li:hover {
 }
 
 #dev-tools {
+	margin-top: 50px;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     justify-content: space-evenly;
