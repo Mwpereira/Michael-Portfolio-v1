@@ -264,6 +264,7 @@ li:hover {
     flex-direction: column;
 	justify-content: center;
 	align-items: space-evenly;
+	background: red;
 }
 
 #Skills h3 {
@@ -365,7 +366,7 @@ li:hover {
     font-size: 30px;
     text-align: center;
     width: 350px;
-    height: 450px;
+    height: 500px;
     box-shadow: 3px 3px 5px 6px #ccc;
     display: flex;
     flex-direction: column;
@@ -550,11 +551,19 @@ li:hover {
 
 	#Portfolio {
         margin: 15% 5% 15% 5%;
-        height: 100%;
+		height: 100%;
+	}
+
+	.grid-container-p3{
+		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+		grid-gap: 50px;
+		justify-items: center;
+		align-content: space-between;
 	}
 	
 	.grid-item-p{
 		width: 80%;
+		height: 85%;
 	}
 }
 
