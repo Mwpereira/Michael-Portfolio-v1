@@ -13,11 +13,15 @@ const navSlide = () => {
 				link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
 			}
 		});
+		
 		burger.classList.toggle("toggle");
 	});
 };
 
 navSlide();
+
+
+/*********** Responsive Scroll ***********/
 
 var pxH = window.innerHeight;
 
@@ -73,11 +77,6 @@ $("#Contact-Nav").click(function () {
 		1000
 	);
 	return false;
-});
-
-$(".nav-links a").click(function () {
-	const nav = document.querySelector(".nav-links");
-	nav.classList.toggle("nav-active");
 });
 
 var prevScrollpos = window.pageYOffset;
