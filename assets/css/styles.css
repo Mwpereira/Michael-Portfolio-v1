@@ -323,7 +323,7 @@ li:hover {
 .grid-item {
     font-size: 30px;
     text-align: center;
-    width: 80px;
+    width: 75px;
     height: auto;
 }
 
@@ -456,17 +456,13 @@ li:hover {
 @media only screen and (max-width: 685px) {
 
 	.grid-container-3 {
-		grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-		justify-items: center;
-        height: 80%;
+        grid-template-columns: auto auto;
 	}
 }
 
 @media only screen and (max-width: 1130px){
     .grid-container-7{
-        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-		justify-items: center;
-        height: 80%;
+        grid-template-columns: auto auto;
     }
 }
 
