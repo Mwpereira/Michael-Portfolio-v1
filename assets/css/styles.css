@@ -417,10 +417,10 @@ li:hover {
 
 .Contact-Links {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    justify-content: space-evenly;
-	align-content: space-evenly;
-	grid-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+	align-content: center;
+	grid-gap: 60px;
     height: auto;
 }
 
@@ -562,7 +562,7 @@ li:hover {
 
 	.Contact-Links{
         grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-        grid-gap: 20px;
-		width: 50%;
+        grid-gap: 20px 0px;
+		width: 35%;
 	}
 }
