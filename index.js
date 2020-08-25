@@ -32,7 +32,6 @@ navSlide();
 
 navBackground();
 
-
 /*********** Responsive Scroll ***********/
 
 var pxH = window.innerHeight;
@@ -45,7 +44,7 @@ $("#Home-Nav").addClass("active");
 $("#Home-Nav").click(function () {
 	$("html, body").animate(
 		{
-			scrollTop: $("#Home").offset().top - pxH*0.01,
+			scrollTop: $("#Home").offset().top,
 		},
 		1000
 	);

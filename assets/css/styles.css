@@ -191,12 +191,12 @@ li:hover {
     flex-direction: row;
 }
 
-#Home img {
+#Home span img {
     width: 35px;
     margin: 1rem;
 }
 
-#Home img:hover {
+#Home span img:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: transform 0.25s ease-in;
@@ -221,7 +221,7 @@ li:hover {
     align-items: center;
     text-align: center;
     height: 100%;
-	width: 80%;
+    width: 80%;
 }
 
 #About-Specifics span {
@@ -234,11 +234,10 @@ li:hover {
 }
 
 #About-Desc {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    text-align: center;
     width: 50%;
-	padding: 50px 10px 10px 10px;
+    padding: 50px 10px 10px 10px;
 }
 
 #Portrait-Photo {
@@ -441,7 +440,7 @@ li:hover {
 	/*------------------------------------SectionTwo----------------------------------*/
 
     #About {
-        margin: 25% 5% 12.5% 5%;
+        margin: 20% 5% 15% 5%;
         height: 100%;
     }
 
@@ -452,7 +451,6 @@ li:hover {
 
     #About-Desc {
         width: 100%;
-        padding: 2.5% 7.5% 6.5% 7.5%;
     }
 
 }
@@ -481,6 +479,13 @@ li:hover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        padding-bottom: 150px;
+    }
+
+    .devImgs{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
     }
 
     h1 {
@@ -502,7 +507,7 @@ li:hover {
     /*------------------------------------SectionThree----------------------------------*/
 
     #Skills {
-        margin: 12.5% 5% 12.5% 5%;
+        margin: 15% 5% 15% 5%;
         height: 100%;
 	}
 	
@@ -526,7 +531,7 @@ li:hover {
 	/*------------------------------------SectionFour-----------------------------------*/
 
 	#Portfolio {
-        margin: 12.5% 5% 12.5% 5%;
+        margin: 15% 5% 15% 5%;
         height: 100%;
         padding-bottom: 0px;
 	}
@@ -548,7 +553,7 @@ li:hover {
 	/*------------------------------------SectionFive-----------------------------------*/
 
 	#Contact {
-        margin: 12.5% 5% 15% 5%;
+        margin: 15% 5% 15% 5%;
         height: 100%;
 	}
 	
@@ -563,6 +568,6 @@ li:hover {
 	.Contact-Links{
         grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
         grid-gap: 20px 0px;
-		width: 35%;
+		width: 45%;
 	}
 }
