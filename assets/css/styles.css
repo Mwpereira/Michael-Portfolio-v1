@@ -188,12 +188,13 @@ li:hover {
 #Home span {
     display: flex;
     flex-direction: row;
-    padding-bottom: 300px;
+    justify-content: center;
 }
 
 #Home span img {
     width: 35px;
     margin: 1rem;
+    margin-bottom: 250px;
 }
 
 #Home span img:hover {
@@ -213,7 +214,11 @@ li:hover {
     font-weight: bold;
     height: 50px;
     width: 250px;
+    outline: none;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /*-----------------------------------SectionTwo-----------------------------------*/
 
@@ -492,13 +497,18 @@ li:hover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding-bottom: 150px;
+        padding-bottom: 75px;
     }
 
     #Home span {
         display: flex;
-        flex-direction: row;
-        padding-bottom: 50px;
+        flex-direction: row;  
+    }
+
+    #Home span img {
+        width: 35px;
+        margin: 1rem;
+        margin-bottom: 100px;
     }
 
     h1 {
