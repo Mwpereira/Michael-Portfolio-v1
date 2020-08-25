@@ -179,7 +179,6 @@ li:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 300px;
 }
 
 #Home h3 {
@@ -189,6 +188,7 @@ li:hover {
 #Home span {
     display: flex;
     flex-direction: row;
+    padding-bottom: 300px;
 }
 
 #Home span img {
@@ -200,6 +200,19 @@ li:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: transform 0.25s ease-in;
+}
+
+#vmwBtn{
+    cursor: pointer;
+    border-color: white;
+    border-radius: 16px;
+    background: transparent;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    width: 250px;
 }
 
 /*-----------------------------------SectionTwo-----------------------------------*/
@@ -482,10 +495,10 @@ li:hover {
         padding-bottom: 150px;
     }
 
-    .devImgs{
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
+    #Home span {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 50px;
     }
 
     h1 {
