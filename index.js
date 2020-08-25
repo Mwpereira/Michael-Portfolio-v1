@@ -28,9 +28,29 @@ const navBackground = () => {
 	});
 };
 
+const vmwArrow = () => {
+	const button = document.querySelector("#vmwBtn");
+
+	button.addEventListener("click", () => {
+
+		if($("#vmwBtn .material-icons").html() == "arrow_right"){
+			$("#vmwBtn .material-icons").html("arrow_drop_down");
+			$("#vmwBtn").css("background-color", "rgb(76, 18, 61)");
+			document.getElementById('About-Nav').click();
+		}
+		else{
+			$("#vmwBtn .material-icons").html("arrow_right");
+			$("#vmwBtn").css("background-color", "transparent");
+		}		
+
+	});
+};
+
 navSlide();
 
 navBackground();
+
+vmwArrow();
 
 /*********** Responsive Scroll ***********/
 
