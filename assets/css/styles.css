@@ -116,7 +116,7 @@ li:hover {
         right: 0px;
         height: 45vh;
         top: 8vh;
-        background-image: url("../img/bg-mobile.png");
+        background-image: linear-gradient(rgb(37, 2, 76), rgb(44, 2, 70));
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -137,6 +137,10 @@ li:hover {
 
 .nav-active {
     transform: translateX(0%);
+}
+
+.is-solid{
+    background-image: linear-gradient(rgb(37, 2, 76), rgb(44, 2, 70));
 }
 
 .toggle .line1 {
@@ -179,7 +183,7 @@ li:hover {
 }
 
 #Home h3 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 #Home span {
@@ -437,7 +441,7 @@ li:hover {
 	/*------------------------------------SectionTwo----------------------------------*/
 
     #About {
-        margin: 35% 5% 15% 5%;
+        margin: 25% 5% 12.5% 5%;
         height: 100%;
     }
 
@@ -477,7 +481,6 @@ li:hover {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding-bottom: 10rem;
     }
 
     h1 {
@@ -499,7 +502,7 @@ li:hover {
     /*------------------------------------SectionThree----------------------------------*/
 
     #Skills {
-        margin: 15% 5% 15% 5%;
+        margin: 12.5% 5% 12.5% 5%;
         height: 100%;
 	}
 	
@@ -523,7 +526,7 @@ li:hover {
 	/*------------------------------------SectionFour-----------------------------------*/
 
 	#Portfolio {
-        margin: 15% 5% 15% 5%;
+        margin: 12.5% 5% 12.5% 5%;
         height: 100%;
         padding-bottom: 0px;
 	}
@@ -545,7 +548,7 @@ li:hover {
 	/*------------------------------------SectionFive-----------------------------------*/
 
 	#Contact {
-        margin: 15% 5% 15% 5%;
+        margin: 12.5% 5% 15% 5%;
         height: 100%;
 	}
 	

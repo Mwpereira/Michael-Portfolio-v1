@@ -18,12 +18,27 @@ const navSlide = () => {
 	});
 };
 
+const navBackground = () => {
+	const nav = document.getElementsByTagName("nav")[0];
+  
+	window.addEventListener("scroll", () => {
+	  this.scrollY > 200
+		? nav.classList.add("is-solid")
+		: nav.classList.remove("is-solid");
+	});
+};
+
 navSlide();
+
+navBackground();
 
 
 /*********** Responsive Scroll ***********/
 
 var pxH = window.innerHeight;
+
+let box = document.querySelector('nav');
+let navHeight = box.offsetHeight;
 
 $("#Home-Nav").addClass("active");
 
@@ -40,7 +55,7 @@ $("#Home-Nav").click(function () {
 $("#About-Nav").click(function () {
 	$("html, body").animate(
 		{
-			scrollTop: $("#About").offset().top - pxH*.1,
+			scrollTop: $("#About").offset().top + navHeight - pxH*.22,
 		},
 		1000
 	);
@@ -50,7 +65,7 @@ $("#About-Nav").click(function () {
 $("#Skills-Nav").click(function () {
 	$(" html,body").animate(
 		{
-			scrollTop: $("#Skills").offset().top - 50,
+			scrollTop: $("#Skills").offset().top + navHeight - pxH*.22,
 		},
 		1000
 	);
@@ -61,7 +76,7 @@ $("#Portfolio-Nav").click(function () {
 	$(this).addClass("active");
 	$("html,body ").animate(
 		{
-			scrollTop: $("#Portfolio").offset().top - pxH*.06,
+			scrollTop: $("#Portfolio").offset().top + navHeight - pxH*.22,
 		},
 		1000
 	);
@@ -72,21 +87,9 @@ $("#Contact-Nav").click(function () {
 	$(this).addClass("active");
 	$("html,body ").animate(
 		{
-			scrollTop: $("#Contact").offset().top - 50,
+			scrollTop: $("#Contact").offset().top + navHeight - pxH*.22,
 		},
 		1000
 	);
 	return false;
 });
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-	document.getElementById("navbar").style.transform = `translateY(0%)`;	
-  } else {
-    document.getElementById("navbar").style.transform = `translateY(-100%)`;
-  }
-  prevScrollpos = currentScrollPos;
-}
-
