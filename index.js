@@ -36,7 +36,8 @@ const vmwArrow = () => {
             document.getElementById("About-Nav").click();
         } else {
             $("#vmwBtn .material-icons").html("arrow_right");
-            $("#vmwBtn").css("background-color", "transparent");
+			$("#vmwBtn").css("background-color", "transparent");
+			document.getElementById("Home-Nav").click();
         }
     });
 };
