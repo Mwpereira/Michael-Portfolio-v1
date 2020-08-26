@@ -12,6 +12,14 @@
     -webkit-touch-callout: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body div{
+    scroll-margin: 125px;
+}
+
 div {
     display: block;
 }
@@ -455,10 +463,15 @@ li:hover {
     transition: transform 0.25s ease-in;
 }
 
-/*-----------------------------------MediaQueries----------------------------------*/
+/*--------------------MediaQueries--------------------*/
 
 @media only screen and (max-width: 1540px) {
-    /*------------------------------------SectionTwo----------------------------------*/
+
+    body div{
+        scroll-margin: 20%;
+    }
+
+    /*----------SectionTwo----------*/
 
     #About {
         margin: 20% 5% 15% 5%;
@@ -488,8 +501,8 @@ li:hover {
 }
 
 @media only screen and (max-width: 1024px) {
-    /*------------------------------------SectionOne----------------------------------*/
 
+    /*----------SectionOne----------*/
     #Home {
         height: 100vh;
         background-image: url("../img/bg-mobile.png");
@@ -527,7 +540,7 @@ li:hover {
         font-size: 1.125rem;
     }
 
-    /*------------------------------------SectionThree----------------------------------*/
+    /*----------SectionThree----------*/
 
     #Skills {
         margin: 15% 5% 15% 5%;
@@ -550,7 +563,8 @@ li:hover {
 }
 
 @media only screen and (max-width: 930px) {
-    /*------------------------------------SectionFour-----------------------------------*/
+
+    /*----------SectionFour----------*/
 
     #Portfolio {
         margin: 15% 5% 15% 5%;
@@ -571,7 +585,8 @@ li:hover {
 }
 
 @media only screen and (max-width: 1010px) {
-    /*------------------------------------SectionFive-----------------------------------*/
+
+    /*----------SectionFive----------*/
 
     #Contact {
         margin: 15% 5% 15% 5%;
