@@ -135,6 +135,14 @@ li:hover {
     }
 }
 
+#navigation {
+    position: fixed;
+}
+
+.active {
+    background: red;
+}
+
 .nav-active {
     transform: translateX(0%);
 }
