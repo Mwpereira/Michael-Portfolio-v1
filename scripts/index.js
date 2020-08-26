@@ -62,6 +62,11 @@ var pxH = window.innerHeight;
 let box = document.querySelector("nav");
 let navHeight = box.offsetHeight;
 
+console.log(navHeight);
+console.log(pxH);
+$("h3").html(navHeight);
+$("h1").html(pxH);
+
 $("#Home-Nav").addClass("active");
 
 $("#Home-Nav").click(function () {
@@ -77,7 +82,7 @@ $("#Home-Nav").click(function () {
 $("#About-Nav").click(function () {
     $("html, body").animate(
         {
-            scrollTop: $("#About").offset().top + navHeight - pxH * 0.25,
+            scrollTop: $("#About").offset().top + navHeight - pxH * 0.24,
         },
         1000
     );
@@ -87,7 +92,7 @@ $("#About-Nav").click(function () {
 $("#Skills-Nav").click(function () {
     $(" html,body").animate(
         {
-            scrollTop: $("#Skills").offset().top + navHeight - pxH * 0.25,
+            scrollTop: $("#Skills").offset().top + navHeight - pxH * 0.24,
         },
         1000
     );
@@ -98,7 +103,7 @@ $("#Portfolio-Nav").click(function () {
     $(this).addClass("active");
     $("html,body ").animate(
         {
-            scrollTop: $("#Portfolio").offset().top + navHeight - pxH * 0.25,
+            scrollTop: $("#Portfolio").offset().top + navHeight - pxH * 0.24,
         },
         1000
     );
@@ -109,7 +114,7 @@ $("#Contact-Nav").click(function () {
     $(this).addClass("active");
     $("html,body ").animate(
         {
-            scrollTop: $("#Contact").offset().top + navHeight - pxH * 0.25,
+            scrollTop: $("#Contact").offset().top + navHeight - pxH * 0.24,
         },
         1000
     );
