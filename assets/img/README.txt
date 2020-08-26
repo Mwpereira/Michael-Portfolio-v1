@@ -1,0 +1,1 @@
+All ./assets/img/ own by Michael Pereira.
