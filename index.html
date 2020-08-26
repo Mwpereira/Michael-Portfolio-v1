@@ -1,244 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!---Required meta tags--->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="HandheldFriendly" content="true" />
-        <meta property="og:title" content="Michael Pereira" />
-        <meta property="og:image" content="https://michaelpereira.dev/assets/img/bg.jpg" />
-        <meta property="og:description" content="A Portfolio Website" />
-        <meta property="og:site_name" content="Michael Pereira" />
-        <!---CSS--->
-        <link rel="stylesheet" href="./assets/css/styles.css" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-        <!---jQuery--->
+	<head>
+		<!---Required meta tags--->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta property="og:title" content="Michael Pereira" />
+		<meta property="og:image" content="https://michaelpereira.dev/assets/img/bg.jpg" />
+		<meta property="og:description" content="A Portfolio Website" />
+		<meta property="og:site_name" content="Michael Pereira" />
+		<!---CSS--->
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<!---jQuery--->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<!---Google Analytics--->
 		<!---Global site tag (gtag.js) - Google Analytics--->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161210047-1"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-			gtag('config', 'UA-161210047-1');
+			gtag("config", "UA-161210047-1");
 		</script>
-        <!---Website Properties--->
-        <title>Michael Pereira</title>
-        <link rel="icon" href="assets/icons/logo.png" />
-    </head>
+		<!---Website Properties--->
+		<title>Michael Pereira</title>
+		<link rel="icon" href="assets/icons/logo.png" />
+	</head>
 
-    <body>
-        <!--------------------NavBar-------------------->
-        <nav id="navbar" class="smart-scroll">
-            <div class="logo">
-                <img src="./assets/icons/logo.png" />
-            </div>
-            <ul class="nav-links">
-                <li>
-                    <a id="Home-Nav" href="#Home">Home</a>
-                </li>
-                <li>
-                    <a id="About-Nav" href="#About">About</a>
-                </li>
-                <li>
-                    <a id="Skills-Nav" href="#Skills">Skills</a>
-                </li>
-                <li>
-                    <a id="Portfolio-Nav" href="#Portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a id="Contact-Nav" href="#Contact">Contact</a>
-                </li>
-            </ul>
+	<body>
+		<!--------------------NavBar-------------------->
+		<nav id="navbar" class="smart-scroll">
+			<div class="logo">
+				<img src="./assets/icons/logo.png" />
+			</div>
+			<ul class="nav-links">
+				<li>
+					<a id="Home-Nav" href="#Home">Home</a>
+				</li>
+				<li>
+					<a id="About-Nav" href="#About">About</a>
+				</li>
+				<li>
+					<a id="Skills-Nav" href="#Skills">Skills</a>
+				</li>
+				<li>
+					<a id="Portfolio-Nav" href="#Portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a id="Contact-Nav" href="#Contact">Contact</a>
+				</li>
+			</ul>
 
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-        <!--------------------SectionOne-------------------->
-        <div id="Home">
-            <h1>Michael Pereira</h1>
-            <h3>Web Developer x UI Designer</h3>
-            <span>
-                <p>
-                    <a href="https://linkedin.com/in/michael-pereira-0237a0193/" target="_blank">
-                        <img src="./assets/icons/linkedin.png" />
-                    </a>
-                </p>
-                <p>
-                    <a href="https://github.com/Mwpereira" target="_blank">
-                        <img src="./assets/icons/github.png" />
-                    </a>
-                </p>
-            </span>
-            <button id="vmwBtn">
-                <span>
-                    View my work
-                    <span class="material-icons" style="padding-left: 20px;">arrow_right</span>
-                </span>
-            </button>
-        </div>
-        <!--------------------SectionTwo-------------------->
-        <div class="container" id="About">
-            <h2>About Me.</h2>
-            <img id="Portrait-Photo" src="./assets/img/mwp.jpg" class="img-fluid" />
-            <div id="About-Content">
-                <div id="About-Specifics">
-                    <span>
-                        <span class="material-icons">
-                            calendar_today
-                        </span>
-                        <p>August 31, 2000</p>
-                    </span>
-                    <span>
-                        <span class="material-icons">
-                            place
-                        </span>
-                        <p>Toronto, Canada</p>
-                    </span>
-                    <span>
-                        <span class="material-icons">
-                            work_outline
-                        </span>
-                        <p>Test Web Developer @ CaseWare International</p>
-                    </span>
-                </div>
-                <div id="About-Desc">
-                    <p>
-                        Hello, my name is Michael Pereira. I am an aspiring full-stack developer
-                        with years of experience web developing and creating desktop GUI's. I first
-                        began programming at 12, learning languages including Java and Visual Basic.
-                        I quickly realized that coding was becoming a passion, thus continuing
-                        forward and mastering C# and Javascript.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!--------------------SectionThree-------------------->
-        <div class="container" id="Skills">
-            <h2>Skills.</h2>
-            <img id="Skills-Photo" src="./assets/img/skills.jpg" />
-            <div id="Skills-Content">
-                <span>
-                    <div class="skills">
-                        <h3>Languages</h3>
-                        <div class="grid-container-3">
-                            <img src="assets/img/CSharp.png" class="grid-item" />
-                            <img src="assets/img/java.png" class="grid-item" />
-                            <img src="assets/img/elixir.png" class="grid-item" />
-                            <img src="assets/img/javascript.png" class="grid-item" />
-                            <img src="assets/img/html.png" class="grid-item" />
-                            <img src="assets/img/css.png" class="grid-item" />
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <h3>Frameworks</h3>
-                        <div class="grid-container-2">
-                            <img src="assets/img/dotnet.png" class="grid-item" />
-                            <img src="assets/img/vuejs.png" class="grid-item" />
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+		<!--------------------SectionOne-------------------->
+		<div id="Home">
+			<h1>Michael Pereira</h1>
+			<h3>Web Developer x UI Designer</h3>
+			<span>
+				<p>
+					<a href="https://linkedin.com/in/michael-pereira-0237a0193/" target="_blank">
+						<img src="./assets/icons/linkedin.png" />
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/Mwpereira" target="_blank">
+						<img src="./assets/icons/github.png" />
+					</a>
+				</p>
+			</span>
+			<button id="vmwBtn">
+				<span>
+					View my work
+					<span class="material-icons" style="padding-left: 20px">arrow_right</span>
+				</span>
+			</button>
+		</div>
+		<!--------------------SectionTwo-------------------->
+		<div class="container" id="About">
+			<h2>About Me.</h2>
+			<img id="Portrait-Photo" src="./assets/img/mwp.jpg" class="img-fluid" />
+			<div id="About-Content">
+				<div id="About-Specifics">
+					<span>
+						<span class="material-icons"> calendar_today </span>
+						<p>August 31, 2000</p>
+					</span>
+					<span>
+						<span class="material-icons"> place </span>
+						<p>Toronto, Canada</p>
+					</span>
+					<span>
+						<span class="material-icons"> work_outline </span>
+						<p>Test Web Developer @ CaseWare International</p>
+					</span>
+				</div>
+				<div id="About-Desc">
+					<p>
+						Hello, my name is Michael Pereira. I am an aspiring full-stack developer with years of experience web developing and creating desktop GUI's. I first began programming at 12,
+						learning languages including Java and Visual Basic. I quickly realized that coding was becoming a passion, thus continuing forward and mastering C# and Javascript.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--------------------SectionThree-------------------->
+		<div class="container" id="Skills">
+			<h2>Skills.</h2>
+			<img id="Skills-Photo" src="./assets/img/skills.jpg" />
+			<div id="Skills-Content">
+				<span>
+					<div class="skills">
+						<h3>Languages</h3>
+						<div class="grid-container-3">
+							<img src="assets/img/CSharp.png" class="grid-item" />
+							<img src="assets/img/java.png" class="grid-item" />
+							<img src="assets/img/elixir.png" class="grid-item" />
+							<img src="assets/img/javascript.png" class="grid-item" />
+							<img src="assets/img/html.png" class="grid-item" />
+							<img src="assets/img/css.png" class="grid-item" />
+						</div>
+					</div>
+					<div class="skills">
+						<h3>Frameworks</h3>
+						<div class="grid-container-2">
+							<img src="assets/img/dotnet.png" class="grid-item" />
+							<img src="assets/img/vuejs.png" class="grid-item" />
 							<img src="assets/img/electron.png" class="grid-item" />
 							<img src="assets/img/bootstrap.png" class="grid-item" />
-                        </div>
-                    </div>
-                </span>
-                <span>
-                    <div class="skills">
-                        <h3>Servers</h3>
-                        <div class="grid-container-2">
-                            <img src="assets/img/node.png" class="grid-item" />
-                            <img src="assets/img/express.png" class="grid-item" />
-                        </div>
-                    </div>
-                    <div class="skills">
-                        <h3>Databases</h3>
-                        <div class="grid-container-2">
-                            <img src="assets/img/postgresql.png" class="grid-item" />
-                            <img src="assets/img/mongodb.png" class="grid-item" />
-                        </div>
-                    </div>
+						</div>
+					</div>
 				</span>
-                <div class="skills">
+				<span>
+					<div class="skills">
+						<h3>Servers</h3>
+						<div class="grid-container-2">
+							<img src="assets/img/node.png" class="grid-item" />
+							<img src="assets/img/express.png" class="grid-item" />
+						</div>
+					</div>
+					<div class="skills">
+						<h3>Databases</h3>
+						<div class="grid-container-2">
+							<img src="assets/img/postgresql.png" class="grid-item" />
+							<img src="assets/img/mongodb.png" class="grid-item" />
+						</div>
+					</div>
+				</span>
+				<div class="skills">
 					<h3>Developer Tools</h3>
 					<div class="grid-container-7">
-                        <img src="assets/img/github.png" class="grid-item" />
+						<img src="assets/img/github.png" class="grid-item" />
 						<img src="assets/img/vsstudio.png" class="grid-item" />
 						<img src="assets/img/vscode.png" class="grid-item" />
 						<img src="assets/img/netbeans.png" class="grid-item" />
 						<img src="assets/img/npm.png" class="grid-item" />
 						<img src="assets/img/figma.png" class="grid-item" />
-                    </div>		
+					</div>
 				</div>
-            </div>
-        </div>
-        <!--------------------SectionFour-------------------->
-        <div class="container" id="Portfolio">
-            <h2>Portfolio.</h2>
-            <div class="grid-container-p3">
-                <div class="grid-item-p">
-                    <h3>Arc</h3>
-                    <img src="assets/img/Arc.png" />
-                    <p>
-                        A secure, advanced, and customizable password vault. Keep your accounts and
-                        data safe by storing your account information locally on your system while
-                        being heavily encrypted.
-                    </p>
-                    <p>
-                        <a href="https://github.com/Mwpereira/Arc-Password-Manager" target="_blank">
-                            <img id="github-dl" src="./assets/icons/github-dark.png" />
-                        </a>
-                    </p>
-                </div>
-                <div class="grid-item-p">
-                    <h3>Embyr</h3>
-                    <img src="assets/img/Embyr.png" />
-                    <p>
-                        Connecting with family and friends made simple and easy. Providing fast and
-                        reliable service to keep you in touch and feeling safe with our strong
-                        encryption and security features.
-                    </p>
-                    <p>
-                        <a href="https://github.com/Mwpereira/Embyr-Chat" target="_blank">
-                            <img id="github-dl" src="./assets/icons/github-dark.png" />
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!--------------------SectionFive-------------------->
-        <div class="container" id="Contact">
-            <h2>Contact Me.</h2>
-            <img id="Contact-Photo" src="./assets/img/hardware.jpg" />
-            <h3>Feel free to contact me at anytime!</h3>
-            <div class="Contact-Links">
-                <p>
-                    <a href="./assets/pdf/resume.pdf" target="_blank">
-                        <img src="./assets/icons/resume.png" />
-                    </a>
-                </p>
-                <p>
-                    <a href="mailto:michael.w.pereira@ryerson.ca" target="_blank">
-                        <img src="./assets/icons/message.png" />
-                    </a>
-                </p>
-                <p>
-                    <a href="https://github.com/Mwpereira/" target="_blank">
-                        <img src="./assets/icons/github-dark.png" />
-                    </a>
-                </p>
-                <p>
-                    <a href="https://linkedin.com/in/michael-pereira-0237a0193/" target="_blank">
-                        <img src="./assets/icons/linkedin-dark.png" />
-                    </a>
-                </p>
-            </div>
-        </div>
-    </body>
+			</div>
+		</div>
+		<!--------------------SectionFour-------------------->
+		<div class="container" id="Portfolio">
+			<h2>Portfolio.</h2>
+			<div class="grid-container-p3">
+				<div class="grid-item-p">
+					<h3>Arc</h3>
+					<img src="assets/img/Arc.png" />
+					<p>
+						A secure, advanced, and customizable password vault. Keep your accounts and data safe by storing your account information locally on your system while being heavily encrypted.
+					</p>
+					<p>
+						<a href="https://github.com/Mwpereira/Arc-Password-Manager" target="_blank">
+							<img id="github-dl" src="./assets/icons/github-dark.png" />
+						</a>
+					</p>
+				</div>
+				<div class="grid-item-p">
+					<h3>Embyr</h3>
+					<img src="assets/img/Embyr.png" />
+					<p>
+						Connecting with family and friends made simple and easy. Providing fast and reliable service to keep you in touch and feeling safe with our strong encryption and security
+						features.
+					</p>
+					<p>
+						<a href="https://github.com/Mwpereira/Embyr-Chat" target="_blank">
+							<img id="github-dl" src="./assets/icons/github-dark.png" />
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--------------------SectionFive-------------------->
+		<div class="container" id="Contact">
+			<h2>Contact Me.</h2>
+			<img id="Contact-Photo" src="./assets/img/hardware.jpg" />
+			<h3>Feel free to contact me at anytime!</h3>
+			<div class="Contact-Links">
+				<p>
+					<a href="./assets/pdf/resume.pdf" target="_blank">
+						<img src="./assets/icons/resume.png" />
+					</a>
+				</p>
+				<p>
+					<a href="mailto:michael.w.pereira@ryerson.ca" target="_blank">
+						<img src="./assets/icons/message.png" />
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/Mwpereira/" target="_blank">
+						<img src="./assets/icons/github-dark.png" />
+					</a>
+				</p>
+				<p>
+					<a href="https://linkedin.com/in/michael-pereira-0237a0193/" target="_blank">
+						<img src="./assets/icons/linkedin-dark.png" />
+					</a>
+				</p>
+			</div>
+		</div>
+	</body>
 
-    <script src="./scripts/script.js"></script>
+	<script src="./scripts/script.js"></script>
 </html>
