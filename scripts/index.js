@@ -55,3 +55,67 @@ navBackground();
 
 vmwArrow();
 
+/*********** Responsive Scroll ***********/
+
+let scrollMargin = 0;
+
+if(window.innerWidth > 1600){
+    scrollMargin = 125;
+}
+else{
+    scrollMargin = window.innerHeight*.15;
+}
+
+$("#Home-Nav").addClass("active");
+
+$("#Home-Nav").click(function () {
+    $("html, body").animate(
+        {
+            scrollTop: $("#Home").offset().top,
+        },
+        1000
+    );
+    return false;
+});
+
+$("#About-Nav").click(function () {
+    $("html, body").animate(
+        {
+            scrollTop: $("#About").offset().top - scrollMargin,
+        },
+        1000
+    );
+    return false;
+});
+
+$("#Skills-Nav").click(function () {
+    $(" html,body").animate(
+        {
+            scrollTop: $("#Skills").offset().top - scrollMargin,
+        },
+        1000
+    );
+    return false;
+});
+
+$("#Portfolio-Nav").click(function () {
+    $(this).addClass("active");
+    $("html,body ").animate(
+        {
+            scrollTop: $("#Portfolio").offset().top - scrollMargin,
+        },
+        1000
+    );
+    return false;
+});
+
+$("#Contact-Nav").click(function () {
+    $(this).addClass("active");
+    $("html,body ").animate(
+        {
+            scrollTop: $("#Contact").offset().top - scrollMargin,
+        },
+        1000
+    );
+    return false;
+});

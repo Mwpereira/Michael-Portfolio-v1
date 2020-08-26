@@ -12,14 +12,6 @@
     -webkit-touch-callout: none;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-body div{
-    scroll-margin: 125px;
-}
-
 div {
     display: block;
 }
