@@ -135,19 +135,11 @@ li:hover {
     }
 }
 
-#navigation {
-    position: fixed;
-}
-
-.active {
-    background: red;
-}
-
 .nav-active {
     transform: translateX(0%);
 }
 
-.is-solid{
+.is-solid {
     background-image: linear-gradient(rgb(37, 2, 76), rgb(44, 2, 70));
 }
 
@@ -211,7 +203,7 @@ li:hover {
     transition: transform 0.25s ease-in;
 }
 
-#vmwBtn{
+#vmwBtn {
     cursor: pointer;
     border-color: white;
     border-radius: 16px;
@@ -226,7 +218,6 @@ li:hover {
     justify-content: center;
     align-items: center;
 }
-
 
 /*-----------------------------------SectionTwo-----------------------------------*/
 
@@ -296,11 +287,11 @@ li:hover {
 
 .skills {
     margin-top: 50px;
-	width: 100%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-	justify-items: center;
+    justify-items: center;
     align-items: space-evenly;
 }
 
@@ -308,7 +299,7 @@ li:hover {
     font-size: 1.875rem;
     font-weight: 600;
     padding: 50px;
-	color: rgb(80, 81, 82);
+    color: rgb(80, 81, 82);
 }
 
 #Skills-Content {
@@ -326,8 +317,8 @@ li:hover {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
-	align-content: space-evenly;
-	grid-gap: 20px;
+    align-content: space-evenly;
+    grid-gap: 20px;
     height: auto;
 }
 
@@ -335,17 +326,17 @@ li:hover {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-evenly;
-	align-content: space-evenly;
-	grid-gap: 20px;
+    align-content: space-evenly;
+    grid-gap: 20px;
     height: auto;
 }
 
-.grid-container-7{
+.grid-container-7 {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     justify-content: space-evenly;
-	align-content: space-evenly;
-	grid-gap: 20px;
+    align-content: space-evenly;
+    grid-gap: 20px;
     height: auto;
 }
 
@@ -444,8 +435,8 @@ li:hover {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
-	align-content: center;
-	grid-gap: 60px;
+    align-content: center;
+    grid-gap: 60px;
     height: auto;
 }
 
@@ -462,8 +453,7 @@ li:hover {
 /*-----------------------------------MediaQueries----------------------------------*/
 
 @media only screen and (max-width: 1540px) {
-
-	/*------------------------------------SectionTwo----------------------------------*/
+    /*------------------------------------SectionTwo----------------------------------*/
 
     #About {
         margin: 20% 5% 15% 5%;
@@ -478,28 +468,25 @@ li:hover {
     #About-Desc {
         width: 100%;
     }
-
 }
 
 @media only screen and (max-width: 685px) {
-
-	.grid-container-3 {
+    .grid-container-3 {
         grid-template-columns: auto auto;
-	}
+    }
 }
 
-@media only screen and (max-width: 1130px){
-    .grid-container-7{
+@media only screen and (max-width: 1130px) {
+    .grid-container-7 {
         grid-template-columns: auto auto;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-
     /*------------------------------------SectionOne----------------------------------*/
 
     #Home {
-		height: 100vh;
+        height: 100vh;
         background-image: url("../img/bg-mobile.png");
         background-color: rgb(52, 1, 67);
         background-position: center;
@@ -510,7 +497,7 @@ li:hover {
 
     #Home span {
         display: flex;
-        flex-direction: row;  
+        flex-direction: row;
     }
 
     #Home span img {
@@ -540,8 +527,8 @@ li:hover {
     #Skills {
         margin: 15% 5% 15% 5%;
         height: 100%;
-	}
-	
+    }
+
     #Skills-Photo {
         width: 80%;
     }
@@ -558,47 +545,45 @@ li:hover {
 }
 
 @media only screen and (max-width: 930px) {
+    /*------------------------------------SectionFour-----------------------------------*/
 
-	/*------------------------------------SectionFour-----------------------------------*/
-
-	#Portfolio {
+    #Portfolio {
         margin: 15% 5% 15% 5%;
         height: 100%;
         padding-bottom: 0px;
-	}
+    }
 
-	.grid-container-p3{
-		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-		justify-items: center;
-		align-content: space-between;
-	}
-	
-	.grid-item-p{
-		width: 80%;
-		height: 85%;
-	}
+    .grid-container-p3 {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        justify-items: center;
+        align-content: space-between;
+    }
+
+    .grid-item-p {
+        width: 80%;
+        height: 85%;
+    }
 }
 
 @media only screen and (max-width: 1010px) {
+    /*------------------------------------SectionFive-----------------------------------*/
 
-	/*------------------------------------SectionFive-----------------------------------*/
-
-	#Contact {
+    #Contact {
         margin: 15% 5% 15% 5%;
         height: 100%;
-	}
-	
-	#Contact-Photo{
-		width: 80%;
-	}
+    }
 
-	#Contact h3{
-		padding: 25px;
-	}
+    #Contact-Photo {
+        width: 80%;
+    }
 
-	.Contact-Links{
+    #Contact h3 {
+        padding: 25px;
+    }
+
+    .Contact-Links {
         grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
         grid-gap: 20px 0px;
-		width: 45%;
-	}
+        width: 45%;
+    }
 }
