@@ -55,7 +55,7 @@ navBackground();
 
 vmwArrow();
 
-/*********** Responsive Scroll ***********/
+/*----------Responsive Scroll----------*/
 
 let scrollMargin = 0;
 
