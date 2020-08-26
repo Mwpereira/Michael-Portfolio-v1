@@ -62,11 +62,6 @@ var pxH = window.innerHeight;
 let box = document.querySelector("nav");
 let navHeight = box.offsetHeight;
 
-console.log(navHeight);
-console.log(pxH);
-$("h3").html(navHeight);
-$("h1").html(pxH);
-
 $("#Home-Nav").addClass("active");
 
 $("#Home-Nav").click(function () {
