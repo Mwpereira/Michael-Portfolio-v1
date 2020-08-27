@@ -577,10 +577,6 @@ li:hover {
 		height: 100%;
 	}
 
-	#Skills-Photo {
-		width: 80%;
-	}
-
 	#Skills-Content {
 		justify-content: center;
 		align-items: center;
@@ -614,17 +610,18 @@ li:hover {
 }
 
 @media only screen and (max-width: 1010px) {
+	/*----------HTMLPage----------*/
+	.container-mwp {
+		width: 80%;
+	}
+	
 	/*----------SectionFive----------*/
 
 	#Contact {
 		margin: 15% 5% 15% 5%;
 		height: 100%;
 	}
-
-	#Contact-Photo {
-		width: 80%;
-	}
-
+	
 	#Contact h3 {
 		padding: 25px;
 	}
