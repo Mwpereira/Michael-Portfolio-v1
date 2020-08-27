@@ -49,6 +49,37 @@ p {
 	box-shadow: 3px 3px 5px 6px #ccc;
 }
 
+.container-mwp {
+	margin-top: 80px;
+	position: relative;
+	width: 45%;
+}
+
+.middle {
+	position: absolute;
+	left: 0;
+	right: 0;
+	transition: 0.5s ease;
+	opacity: 0;
+	transform: translate(0%, -100%);
+	-ms-transform: translate(0%, -100%);
+	text-align: center;
+}
+
+.container-mwp:hover img {
+	opacity: 0.2;
+}
+
+.container-mwp:hover .middle {
+	opacity: 1;
+}
+
+.container-mwp p {
+	color: black;
+	font-size: 20px;
+	padding: 12px 36px;
+}
+
 /*--------------------NavBar--------------------*/
 
 nav {
@@ -62,9 +93,15 @@ nav {
 	z-index: 99;
 }
 
-.logo img {
-	width: 60px;
-	height: 60px;
+.logo {
+	width: 250px;
+	height: auto;
+}
+
+nav h2 {
+	color: white;
+	font-size: 22px;
+	display: none;
 }
 
 .nav-links {
@@ -282,11 +319,13 @@ li:hover {
 }
 
 #Skills-Photo {
-	margin-top: 80px;
-	margin-top: 100px;
-	width: 45%;
+	display: block;
+	width: 100%;
+	height: auto;
 	height: auto;
 	border-radius: 12px;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
 }
 
 .skills {
@@ -429,10 +468,12 @@ li:hover {
 }
 
 #Contact-Photo {
-	margin-top: 80px;
-	width: 45%;
+	display: block;
+	width: 100%;
 	height: auto;
 	border-radius: 12px;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
 }
 
 .Contact-Links {

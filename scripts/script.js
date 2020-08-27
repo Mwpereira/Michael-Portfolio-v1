@@ -24,7 +24,13 @@ const navBackground = () => {
 	const nav = document.getElementsByTagName("nav")[0];
 
 	window.addEventListener("scroll", () => {
-		this.scrollY > 200 ? nav.classList.add("is-solid") : nav.classList.remove("is-solid");
+		if (this.scrollY > 200) {
+			nav.classList.add("is-solid");
+			$("nav h2").show("slow");
+		} else {
+			nav.classList.remove("is-solid");
+			$("nav h2").hide();
+		}
 	});
 };
 
