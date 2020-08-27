@@ -295,7 +295,7 @@ li:hover {
 	justify-content: center;
 	text-align: center;
 	width: 50%;
-	padding: 50px 10px 10px 10px;
+	padding: 0px 10px 10px 10px;
 }
 
 #Portrait-Photo {
@@ -498,12 +498,12 @@ li:hover {
 /*--------------------MediaQueries--------------------*/
 
 @media only screen and (max-width: 1540px) {
+	/*----------HTMLPage----------*/
 	body div {
 		scroll-margin: 20%;
 	}
-
+	
 	/*----------SectionTwo----------*/
-
 	#About {
 		margin: 20% 5% 15% 5%;
 		height: 100%;
@@ -516,6 +516,7 @@ li:hover {
 
 	#About-Desc {
 		width: 100%;
+		padding-top: 15px;
 	}
 }
 
