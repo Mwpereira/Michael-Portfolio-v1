@@ -495,6 +495,12 @@ li:hover {
 	transition: transform 0.25s ease-in;
 }
 
+#Footer-Text{
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	padding-bottom: 10px;
+}
 /*--------------------MediaQueries--------------------*/
 
 @media only screen and (max-width: 1540px) {
