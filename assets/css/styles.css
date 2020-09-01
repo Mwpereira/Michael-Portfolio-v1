@@ -47,6 +47,8 @@ p {
 
 .container {
 	box-shadow: 3px 3px 5px 6px #ccc;
+	display: flex;
+	flex-direction: column;
 }
 
 .container-mwp {
@@ -266,8 +268,6 @@ li:hover {
 	margin: 125px 50px 145px 50px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	display: flex;
-	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
 }
@@ -311,8 +311,6 @@ li:hover {
 	margin: 145px 50px 145px 50px;
 	padding-top: 50px;
 	padding-bottom: 75px;
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -396,8 +394,6 @@ li:hover {
 	margin: 145px 50px 145px 50px;
 	padding-top: 50px;
 	padding-bottom: 60px;
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -453,8 +449,6 @@ li:hover {
 	margin: 145px 50px 145px 50px;
 	padding-top: 50px;
 	padding-bottom: 75px;
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
