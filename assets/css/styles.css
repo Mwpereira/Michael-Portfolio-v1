@@ -490,7 +490,7 @@ li:hover {
 	transition: transform 0.25s ease-in;
 }
 
-#Footer-Text {
+footer p{
 	width: 100%;
 	text-align: center;
 	font-size: 12px;
@@ -539,7 +539,7 @@ li:hover {
 	/*----------Home----------*/
 	#Home {
 		height: 100vh;
-		background-image: url("../img/bg-mobile.png");
+		background-image: url("../img/bg-mobile1.jpg");
 		background-color: rgb(52, 1, 67);
 		background-position: center;
 		background-repeat: no-repeat;
@@ -568,7 +568,7 @@ li:hover {
 	}
 
 	h2 {
-		font-size: 3rem;
+		font-size: 2.75rem;
 	}
 
 	h3 {
@@ -576,7 +576,7 @@ li:hover {
 	}
 
 	p {
-		font-size: 1.125rem;
+		font-size: 1rem;
 	}
 
 	/*----------Skills----------*/
@@ -594,27 +594,6 @@ li:hover {
 	#Skills-Content span {
 		flex-direction: column;
 		justify-content: center;
-	}
-}
-
-@media only screen and (max-width: 930px) {
-	/*----------Portfolio----------*/
-
-	#Portfolio {
-		margin: 15% 5% 15% 5%;
-		height: 100%;
-		padding-bottom: 0px;
-	}
-
-	.grid-container-p3 {
-		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-		justify-items: center;
-		align-content: space-between;
-	}
-
-	.grid-item-p {
-		width: 80%;
-		height: 85%;
 	}
 }
 
@@ -639,5 +618,34 @@ li:hover {
 		grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
 		grid-gap: 20px 0px;
 		width: 45%;
+	}
+}
+
+@media only screen and (max-width: 930px) {
+	/*----------HTMLPage----------*/
+
+	.container {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+
+	/*----------Portfolio----------*/
+
+	#Portfolio {
+		margin: 15% 5% 15% 5%;
+		height: 100%;
+		padding-bottom: 0px;
+	}
+
+	.grid-container-p3 {
+		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+		justify-items: center;
+		align-content: space-between;
+	}
+
+	.grid-item-p {
+		width: 80%;
+		height: 85%;
 	}
 }
