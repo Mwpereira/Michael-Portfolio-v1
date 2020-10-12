@@ -14,6 +14,9 @@
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!---Javascript--->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	
 		<!---jQuery--->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<!---Google Analytics--->
@@ -84,7 +87,7 @@
 			</button>
 		</div>
 		<!--------------------About-------------------->
-		<div class="container" id="About">
+		<div class="container" id="About" data-aos="fade" data-aos-delay="300">
 			<h2>About Me.</h2>
 			<img id="Portrait-Photo" src="./assets/img/mwp.jpg" class="img-fluid" />
 			<div id="About-Content">
@@ -237,6 +240,9 @@
 		<footer>
 			<p>All trademarks and logos are the property of their respective owners.</p>
 		</footer>
+		<script>
+			AOS.init();
+		</script>	
 	</body>
 
 	<script src="./scripts/script.js"></script>
