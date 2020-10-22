@@ -69,6 +69,9 @@ let scrollMargin = 0;
 
 if (window.innerWidth > 1600) {
 	scrollMargin = 125;
+}
+if(window.innerWidth < 900){
+	scrollMargin = window.innerHeight * 0.06;
 } else {
 	scrollMargin = window.innerHeight * 0.085;
 }
