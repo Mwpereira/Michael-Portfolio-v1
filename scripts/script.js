@@ -76,6 +76,17 @@ else if(window.innerWidth < 900){
 	scrollMargin = window.innerHeight * 0.085;
 }
 
+window.onresize = function(event) {
+    if (window.innerWidth > 1600) {
+		scrollMargin = 125;
+	}
+	else if(window.innerWidth < 900){
+		scrollMargin = window.innerHeight * 0.06;
+	} else {
+		scrollMargin = window.innerHeight * 0.085;
+	}
+};
+
 $("#Home-Nav").addClass("active");
 
 $("#Home-Nav").click(function () {
