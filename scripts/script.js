@@ -39,7 +39,7 @@ const vmwArrow = () => {
     button.addEventListener("click", () => {
         if ($("#vmwBtn .material-icons").html() == "arrow_right") {
             $("#vmwBtn .material-icons").html("arrow_drop_down");
-            $("#vmwBtn").css("background-color", "rgb(76, 18, 61)");
+            $("#vmwBtn").css("background-color", "rgba(255,255,255,0.075)");
             document.getElementById("About-Nav").click();
         } else {
             $("#vmwBtn .material-icons").html("arrow_right");
@@ -65,12 +65,12 @@ vmwArrow();
 /*----------Responsive Scroll----------*/
 let scrollMargin = 0;
 
-if (window.innerWidth > 1600) {
+if (window.innerWidth >= 1600) {
     scrollMargin = 125;
 } else if (window.innerWidth < 900) {
     scrollMargin = window.innerHeight * 0.06;
 } else {
-    scrollMargin = window.innerHeight * 0.085;
+    scrollMargin = window.innerHeight * 0.1;
 }
 
 window.onresize = function (event) {
