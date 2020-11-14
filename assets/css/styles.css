@@ -57,7 +57,7 @@ p {
 }
 
 .container-mwp {
-    margin-top: 80px;
+    margin-top: 60px;
     position: relative;
     width: 40vw;
 }
@@ -294,7 +294,11 @@ li:hover a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0.5vw 0.75vw 0.75vw 0vw;
+    padding: 10px;
+}
+
+#test1{
+	width: 80%;
 }
 
 #About-Desc {
@@ -305,8 +309,8 @@ li:hover a {
 }
 
 #Portrait-Photo {
-    margin-top: 80px;
-    margin-bottom: 45px;
+    margin-top: 60px;
+    margin-bottom: 30px;
     width: 250px;
     border-radius: 50%;
 }
@@ -419,7 +423,7 @@ li:hover a {
     align-content: space-evenly;
     height: 100%;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .grid-item-p {
