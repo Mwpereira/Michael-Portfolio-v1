@@ -336,7 +336,6 @@ li:hover a {
 }
 
 .skills {
-    margin-top: 50px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -348,7 +347,7 @@ li:hover a {
 #Skills h3 {
     font-size: 1.875rem;
     font-weight: 600;
-    padding: 50px;
+    margin: 50px;
     color: rgb(80, 81, 82);
 }
 
